@@ -4,12 +4,14 @@
 #include <iostream>
 #include <stdio.h>
 #include "type_def.h"
-#include "set_up.h"
+#include "set_up_single_linklist.h"
 #include "output_single_linklist.h"
 #include "output_loop_linklist.h"
 #include "insert_in_loop_linklist.h"
 #include "resolve_single_linklist.h"
-void main()
+
+
+int main()
 {  linklist *head,*letter,*digit,*other;
    creat(head);
    print1(head);

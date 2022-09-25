@@ -4,14 +4,14 @@ void creat(linklist*&head)
    linklist *s,*r;
    head=new linklist;
    r=head;
-   cin>>x;
+   std::cin>>x;
    while(x!='$')
    {  
 	  s=new linklist;
       s->data=x;
 	  r->next=s;
 	  r=s;
-	  cin>>x;
+	  std::cin>>x;
    }
    r->next=NULL;
 }
