@@ -1,14 +1,14 @@
 
 
 //分解单链表主程序文件.cpp
-#include<iostream.h>
-#include<stdio.h>
-#include"单链表结构类型定义.h"
-#include"建立单链表.h"
-#include"输出单链表.h"
-#include"输出循环链表.h"
-#include"在循环链表中插入.h"
-#include"分解单链表.h"
+#include <iostream>
+#include <stdio.h>
+#include "type_def.h"
+#include "set_up.h"
+#include "output_single_linklist.h"
+#include "output_loop_linklist.h"
+#include "insert_in_loop_linklist.h"
+#include "resolve_single_linklist.h"
 void main()
 {  linklist *head,*letter,*digit,*other;
    creat(head);
