@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void main()
+int main()
 {  qu *sq;
    datatype x, *p,i;
    int key;
@@ -26,19 +26,21 @@ void main()
 		          if(p!=NULL) cout<<*p<<endl;
 				  else printf("The queue is empty!\n");
 		          break;
-		 case -1: {if (sq->quelen==0)
+		 case -1: if (sq->quelen==0)
 					  printf("The queue is empty!\n");
-			      else
-			      i=0;
-				  {while(i<sq->quelen)
-				  {
-					  printf("%d  ",sq->sequ[(sq->rear+m-sq->quelen+1+i)%m]);
-					  i++;
-				  }
-				  printf("\n");}
-				  } 
-		 case 0:return;
+			      else{
+						i=0;
+						while(i<sq->quelen)
+						{
+							printf("%d  ",sq->sequ[(sq->rear+m-sq->quelen+i)%m]);
+							i++;
+						}
+						printf("\n");
+					}
+				  break;
+		 case 0:return 0;
 
       }
    }while(1);
+   return 0;
 }
