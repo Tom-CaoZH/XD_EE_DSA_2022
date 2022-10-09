@@ -11,7 +11,7 @@
 
 using namespace std;
 
-void main()
+int main()
 {
 	linklist *head;stack *s;
 	datatype str[80];
@@ -19,6 +19,10 @@ void main()
 	creat(head,str);
 	printlink(head);
 	setnull(s);
-	if(symmetry(head,s)) cout<<"字符串\""<<str<<"\"中心对称\n";
-	else cout<<"字符串\""<<str<<"\"不是中心对称\n";
+	if(symmetry(head,s)) cout << "string :" << str << " is symmentry" << endl;
+	else {
+		cout << "string :" << str << " is not symmentry" << endl;
+	}
+	// if(symmetry(head,s)) cout<<"字符串\""<<str<<"\"中心对称\n";
+	// else cout<<"字符串\""<<str<<"\"不是中心对称\n";
 }
