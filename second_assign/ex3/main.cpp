@@ -1,11 +1,14 @@
 //循环队列入队出队的主程序文件.cpp
-#include<iostream.h>
+#include<iostream>
 #include<stdio.h>
 #include<stdlib.h>
-#include"循环队列的结构类型定义.h"
-#include"置空队.h"
-#include"入队.h"
-#include"出队.h"
+#include "type_def.h"
+#include "empty.h"
+#include "push_q.h"
+#include "pop_q.h"
+
+using namespace std;
+
 void main()
 {  qu *sq;
    datatype x, *p,i;
