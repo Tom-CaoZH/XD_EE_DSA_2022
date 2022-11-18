@@ -23,5 +23,6 @@ int main()
 	root=delsubtree(root,x);
 	preorder(root);
 	cout<<endl;
+	return 0;
 }
 

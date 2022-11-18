@@ -3,14 +3,14 @@ void preorder(bitree*p)
 {
 	if(p!=NULL)
 	{
-		cout<<p->data;
+		std::cout<<p->data;
 		if(p->lchild!=NULL||p->rchild!=NULL)
 		{
-			cout<<"(";
+			std::cout<<"(";
 			preorder(p->lchild);
-			if(p->rchild!=NULL)cout<<",";
+			if(p->rchild!=NULL)std::cout<<",";
 			preorder(p->rchild);
-			cout<<")";
+			std::cout<<")";
 		}
 	}
 }

@@ -1,4 +1,4 @@
-//½»»»×óÓÒ×ÓÊ÷µÄÖ÷³ÌÐòÎÄ¼þ.cpp
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½.cpp
 #include<iostream>
 #include<stdio.h>
 #include"type_def.h"
@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void main()
+int main()
 {
 	bitree*pb;
 	pb=creattree();
@@ -17,5 +17,6 @@ void main()
 	swap(pb);
 	preorder(pb);
 	cout<<endl;
+	return 0;
 }
 
