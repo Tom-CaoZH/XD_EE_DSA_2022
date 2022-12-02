@@ -263,7 +263,7 @@ bool Huffman::readTableFile(std::string fstr) {
 	TableEntry temp;
 	
 	if (tablefile) delete tablefile;
-	tablefile =    new Tablefile;
+	tablefile =    new TableFile;
 	
 	std::ifstream file(fstr.c_str(), std::ios::binary);
 	
