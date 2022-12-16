@@ -200,13 +200,13 @@ queue<Bit> encodeText(const string& str, EncodingTreeNode* tree) {
     queue<Bit> ret;
     for(char ch : str) {
         vector<Bit> all_bits = elems[ch];
-        cout << "char: " << ch << endl;
-        cout << "encode: " ;
+        // cout << "char: " << ch << endl;
+        // cout << "encode: " ;
         for(Bit bit : all_bits) {
-            cout << bit << " ";
+            // cout << bit << " ";
             ret.push(bit);
         }
-        cout << endl;
+        // cout << endl;
     }
     return ret;
 }
@@ -267,6 +267,7 @@ void PrintTree(EncodingTreeNode* tree) {
 }
 
 void Printqueue(queue<Bit> q) {
+    cout << "Encode data: ";
     while(!q.empty()) {
         cout << q.front() ;
         q.pop();

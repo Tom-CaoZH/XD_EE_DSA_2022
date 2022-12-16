@@ -8,8 +8,7 @@ using namespace std;
 
 int main(void) {
     // Read file
-    cout << "hello" << endl;
-    string FileName = "./TestFile.txt";
+    string FileName = "./test_data/TestFile.txt";
     ifstream in;
     in.open(FileName);
     stringstream out;
